@@ -1,0 +1,427 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background: url('img/background.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* NAVBAR */
+.navbar-nav a{
+	color: #f4f4f4;
+}
+p a{
+	text-decoration: none;
+}
+.navbar{
+	background:darkslateblue;
+}
+.nav-link , .navbar-brand{
+	color: #f4f4f4;
+	cursor: pointer;
+}
+.nav-link{
+	margin-right: 1em !important;
+}
+.nav-link:hover{
+	background: #f4f4f4 !important;
+	color: white !important;
+}
+.navbar-collapse{
+	justify-content: flex-end;
+}
+.navbar-toggler{
+	background:#fff !important;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 10%;
+  padding: 10px 0 10px 0;
+  background: #fff;
+}
+.footer-index {
+  margin-top: 0;
+}
+.footer img {
+  width: 80px;
+  height: 60px;
+}
+
+.footer a {
+  text-decoration: none;
+  color:#4b4c4d;
+  font-weight: lighter;
+}
+
+.footer .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+/* INDEX CONTENT */
+.box {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper, .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+
+.order-now button {
+  position: absolute;
+  z-index: 2;
+  margin-right: 10%;
+  bottom: 20%;
+  background-color: lightgray;
+}
+
+.popup {
+  width: 80%;
+  background: white;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%) scale(0.1);
+  justify-content: center;
+  padding: 0 30px 30px 30px;
+  color: #333;
+  border-radius: 6px;
+  visibility: hidden;
+  transition: transform 0.5s, top 0.5s;
+  z-index: 1;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 80%;
+  max-height: 400px;
+  max-width: 800px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.booking-form {
+  width: 80%;
+  background: white;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%) scale(0.1);
+  justify-content: center;
+  padding: 0 30px 30px 30px;
+  color: #333;
+  border-radius: 6px;
+  visibility: hidden;
+  transition: transform 0.5s, top 0.5s;
+  z-index: 1;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 80%;
+  max-height: 400px;
+  max-width: 800px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.booking-form input {
+  width: 100%;
+}
+
+.booking, .booking-form button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 0 0 5px 6px;
+  font-weight: bolder;
+}
+
+.data-booking {
+  width: 80%;
+  background: white;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%) scale(0.1);
+  justify-content: center;
+  padding: 0 30px 30px 30px;
+  color: #333;
+  border-radius: 6px;
+  visibility: hidden;
+  transition: transform 0.5s, top 0.5s;
+  z-index: 1;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 80%;
+  max-height: 400px;
+  max-width: 800px;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.showPopUp {
+  top: 50%;
+  visibility: visible;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.showForm {
+  top: 50%;
+  visibility: visible;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.showData {
+  top: 50%;
+  visibility: visible;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.popup table {
+  display: block;
+  margin-top: 20px;
+}
+
+.popup tr {
+  text-align:center;
+}
+
+.popup i, .booking-form i, .data-booking i{
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+
+/* BLOG PAGE */
+.blog {
+	position: relative;
+	background-image: url('img/background.jpg');
+	
+	background-size: cover;
+	background-position: center;	
+}
+.blog h1{
+	color:darkslateblue;
+	margin-bottom: 4em;	
+	text-align: center;
+}
+.blog .print{
+	color:black;
+	font-size: 20px;
+	text-align: justify;
+}
+
+/* PORTOFOLIO PAGE */
+.team{
+	position: relative;
+	background-image: url('../img/background.jpg');
+	
+	background-size: cover;
+	background-position: center;
+}
+.team h1{
+	color:darkslateblue;
+	margin-bottom: 2em;	
+}
+ 
+.team .item{
+	position: relative;
+	overflow: hidden;	
+}
+/*
+.team .des{
+	background: #ffc107;
+	color: rgb(255, 253, 253);
+	text-align: center;
+	border-top-right-radius: 93%;
+	transition:.4s ease-in-out;
+	position: absolute;
+	
+}
+.team .item:hover .des{
+	height: 100%;
+	background:#ffc107;
+	position: absolute;
+	width: 89%;
+	padding: 5em;
+	top: 0;
+	border-top-right-radius: 0;
+}
+.text-justify{
+	color: #f4f4f4;
+} */
+
+/* ABOUT US PAGE */
+.about{
+	position: relative;
+	background-image: url('../img/background');
+	
+	background-size: cover;
+	background-position: center;
+}
+.about h1{
+	color:darkslateblue;
+	padding: 2em;
+}
+.about img{
+	height: 75%;
+	width: 75%;
+	border-radius: 50%;
+	padding-bottom: 3em;
+}
+.about span{
+	display: block;
+	color: rgb(219, 209, 209);
+	position: absolute;
+	left: 115px;
+}
+.about .desc{
+	padding: 2em;
+	border-left:2px solid #2536cf;
+}
+.about .desc h3{
+	color: black;
+}
+.about .desc p{
+	line-height:2;
+	color:black;
+	padding-bottom: 3em;
+}
+/* CONTACT PAGE */
+.contact {
+  /*background-color : whitesmoke;
+  border-radius: 8px;*/
+  width: 60%;
+  margin-top: 10%;
+  padding-bottom: 3%;
+  /*box-shadow: 5px 10px rgb(0 0 0 / 0.2);*/
+}
+
+.contact img {
+  margin-top: 70px;
+  width: 200px;
+  height: 120px;
+}
+
+.contact-data {
+  margin-top: 40px;
+  border-left: solid;
+  border-color: #135589;
+  margin-left: 30px;
+}
+
+.contact-data ul {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.contact-data li {
+  font-size: 20px;
+  padding-bottom: 2px;
+}
+
+/* TODOS PAGE */
+.todo {
+  background-color : whitesmoke;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 80%;
+  padding: 30px 30px 30px 0;
+  margin-top: 5%;
+  box-shadow: 5px 10px rgb(0 0 0 / 0.2);
+}
+
+.todo h4 {
+  margin-left: 40px;
+}
+
+.todo input {
+  width: 68%;
+  height: 100%;
+  border: 1px solid;
+  border-color: lightgray;
+  font-size: 16px;
+  border-radius: 4px;
+  padding-left: 10px;
+  margin: 10px 0 10px 40px;
+}
+
+.todo .add {
+  width: 30px;
+  height: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 0 0 5px 6px;
+  color: white;
+  background-color: blue;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.todo .add.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.todos {
+  margin-top: 20px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.todos li {
+  list-style: none;
+  right: 0;
+  width: 90%;
+  height: 45px;
+  line-height: 45px;
+  background : white;
+  position: relative;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  padding: 0 15px;
+  overflow: hidden;
+}
+
+.todos li span {
+  position: absolute;
+  right: -60px;
+  color: white;
+  width: 60px;
+  text-align: center;
+  background: red;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.todos li:hover span {
+  right: 0px;
+}
+
+.footer-todo {
+  margin: 30px 0 10px 40px;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.footer-todo button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 0 0 5px 6px;
+  color: white;
+  background-color: blue;
+}
